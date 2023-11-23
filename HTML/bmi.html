@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>BMI Calculator</title>
+	</head>
+	<style media="screen">
+		body{
+			
+		
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			font-family: sans-serif;
+			background-image: url(/img/bmi.jpg);
+			background-size: 100% 100%;
+			min-height: 100vh;
+		}
+		.BMI{
+			
+			width: 500px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			background: rgba(0,0,0,0.6);
+			transform: translate(-50%, -50%);
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 1px 1px 15px #585858;
+		}
+		h2{
+			font-size: 30px;
+			font-weight: 600;
+			color: white;
+		}
+		.text{
+			text-align: left;
+			margin-left: 150px;
+			color: white;
+		}
+		#w, #h{
+			color: white;
+			text-align: left;
+			font-size: 20px;
+			font-weight: 200;
+			outline: none;
+			border: none;
+			background: none;
+			border-bottom: 1px solid #341f97;
+			width: 200px;
+		}
+			#w:focus, #h:focus{
+				border-bottom: 2px solid #341f97;
+				width: 300px;
+				transition: 0.5s;
+				color: white;
+			}
+			#result{
+				color: #eeedf6;
+			}
+			#btn{
+				font-family: inherit;
+				margin-top: 10px;
+				border: none;
+				color: red;
+				
+				width: 150px;
+				padding: 10px;
+				border-radius: 30px;
+				outline: none;
+				cursor: pointer;
+			}
+			#btn:hover{
+			color: blue;
+			}
+			#info{
+				font-size: 12px;
+				font-family: inherit;
+				color: white;
+			}
+
+
+
+.logo img{
+    margin-top: 2%;
+	float: left;
+	width: 150px;
+	height: auto;
+}
+ul li.active a{
+    background-color: white;
+    color: black;
+}
+
+
+			
+	</style>
+	<script type="text/javascript">
+		function BMI() {
+			var h=document.getElementById('h').value;
+			var w=document.getElementById('w').value;
+			if(h<=0 || w<=0){
+				document.getElementById("result").innerHTML="Please enter valid height and weight";
+			}
+			else{
+			var bmi=w/(h/100*h/100);
+			var bmio=(bmi.toFixed(2));
+
+			
+			if(bmi < 18.6){
+				document.getElementById("result").innerHTML="Your BMI is " + bmio+ "  (Under Weight)";
+        }else if(bmi >= 18.6 && bmi < 24.9){
+            document.getElementById("result").innerHTML="Your BMI is " + bmio+ "  (Normal)";
+        }else {
+            document.getElementById("result").innerHTML="Your BMI is " + bmio+ "  (Over Weight)";
+        }
+	}
+
+		
+		}
+		
+	</script>
+				<div class="logo">
+                    <a href="#"><img  src="/img/gymflex-removebg-preview.png"></a>
+                    
+                </div>
+	
+			
+	<body>
+
+		
+		<div class="BMI">
+			<h2>BMI Calculator</h2>
+			<p class="text">Height</p>
+			<input type="text" id="h">
+			<p class="text">Weight</p>
+			<input type="text" id="w">
+			<p id="result"></p>
+			<button id="btn" onClick="BMI()">Calculate</button>
+			<p id="info">Please enter height [cm] and weight [kg]</p>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #1a237e, #9639ab); /* Deep Purple Indigo Gradient */
+            color: #ffffff;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            width: 300px;
+        }
+
+        h2 {
+            color: #3f51b5; /* Indigo color */
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+            color: #3f51b5;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #3f51b5; /* Indigo border */
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #3f51b5; /* Indigo color */
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #1a237e; /* Darker Indigo color on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+
+
+        
+        <h2>Admin Login</h2>
+        <label for="adminUsername">Username:</label>
+        <input type="text" id="adminUsername" name="adminUsername" required>
+
+        <label for="adminPassword">Password:</label>
+        <input type="password" id="adminPassword" name="adminPassword" required>
+
+        <!-- <button type="button" name="log" id="logbutton"  onclick="validate()">Login</button> -->
+        <input type="button" name="log" id="logbutton" value="Admin Login" onclick="Admistrate()">
+    </form>
+    <script src="/JAVASCRIPT/admin_page.js"></script> 
+</body>
+</html>

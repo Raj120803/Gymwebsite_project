@@ -1,0 +1,403 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+
+}
+
+header{
+	
+	margin-top: 5%;
+	background-size: 100% 100%;
+	background-position: center;
+
+}
+nav{
+	margin-top: -10%;
+	position: fixed;
+	width: 100%;
+	line-height: 60px;
+	background-color: #000000a3;
+}
+
+nav ul{
+	float: right;
+	margin: 0;
+	margin-top: 15px;
+	padding-right: 42px;
+}
+
+nav ul li {
+    margin-top: 41px;
+    display: inline-block;
+    padding: 10px 34px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	transition: 0.4s ease;
+
+}
+nav ul li a:hover{
+	border: 2px solid red;
+	font-size: 22px;
+	padding: 2px;
+}
+
+
+.logo{
+	height: 90px;
+	float: left;
+	margin: 16px;
+	cursor: pointer;
+	margin-top: 3%;
+}
+
+
+.workouts{
+	display: none;
+}
+ul li:hover .workouts{
+	display: block;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: -15px;
+	background-color: #000;
+}
+ul li:hover .workouts ul{
+	display:block ;
+	margin: 10px;
+}
+ul li:hover .workouts ul li{
+	width: 120px;
+	padding: 15px;
+	border: 2px solid #fff;
+	border-radius: 0;
+	text-align: left;
+	transition: 0.4s ease;
+}
+ul li:hover .workouts ul li:hover{
+	border: transparent;
+	font-size: 35px;
+	background-color: red;
+	-webkit-text-stroke: 2px #000;
+}
+.para{
+    	margin-top: 2.5%;
+	background-size: 100% 100%;
+	width: 80%;
+	background-position: center;
+	height: 75vh;
+	margin-left: 10%;
+}
+.para p{
+		
+	margin-left: 2%;
+	margin-right: 5%;
+	text-transform: uppercase;
+	font-family: verdana;
+	font-size: 20px;
+	font-weight: bold;
+	color:	#585858;
+}
+.yash{
+	
+	width: 98%;
+	height: 380px;
+	margin-top: 25%;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-left: 25px;
+	background-color: #303030;
+	border-radius: 20px;
+}
+.yash img{
+	width: 23%;
+    height: 52vh;
+    margin-top: 8px;
+    margin-left: 8px;
+    border-radius: 25px;
+}
+.yash h1{
+	margin-left: 25%;
+	margin-top: -22%;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: verdana;
+	cursor: pointer;
+	font-size: 40px;
+	
+}
+.yash p{
+	margin-top: 4%;
+	margin-left: 25%;
+	margin-right: 50px;
+	color: #fff;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: verdana;
+}
+.anand{
+	width: 98%;
+	height: 380px;
+	margin-top: 2%;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-left: 25px;
+	background-color: #585858;
+	border-radius: 20px;
+}
+.anand img{
+	width: 23%;
+    height: 52vh;
+    margin-top: 8px;
+    margin-left: 8px;
+    border-radius: 25px;
+}
+.anand h1{
+	margin-left: 25%;
+	margin-top: -22%;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: verdana;
+	cursor: pointer;
+	font-size: 40px;
+}
+.anand p{
+	margin-top: 4%;
+	margin-left: 25%;
+	margin-right: 50px;
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: verdana;
+}
+.jeet{
+	width: 98%;
+	height: 380px;
+	margin-top: 2%;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-left: 25px;
+	background-color: #303030;
+	border-radius: 20px;
+}
+.jeet img{
+	width: 23%;
+    height: 52vh;
+    margin-top: 8px;
+    margin-left: 8px;
+    border-radius: 25px;
+}
+.jeet h1{
+	margin-left: 25%;
+	margin-top: -22%;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: verdana;
+	cursor: pointer;
+	font-size: 40px;
+}
+.jeet p{
+	margin-top: 4%;
+	margin-left: 25%;
+	margin-right: 50px;
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: verdana;
+}
+.mukesh{
+		width: 98%;
+	height: 380px;
+	margin-top: 2%;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-left: 25px;
+	background-color: #585858;
+	border-radius: 20px;
+}
+.mukesh img{
+    width: 23%;
+    height: 52vh;
+    margin-top: 8px;
+    margin-left: 8px;
+    border-radius: 25px;
+}
+.mukesh h1{
+     margin-left: 25%;
+	margin-top: -22%;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: verdana;
+	cursor: pointer;
+	font-size: 40px;
+}
+.mukesh p{
+	margin-top: 4%;
+	margin-left: 25%;
+	margin-right: 50px;
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: verdana;
+}
+.gaurav{
+	width: 98%;
+	height: 380px;
+	margin-top: 2%;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-left: 25px;
+	background-color: #303030;
+	border-radius: 20px;
+}
+.gaurav img{
+	width: 23%;
+    height: 52vh;
+    margin-top: 8px;
+    margin-left: 8px;
+    border-radius: 25px;
+}
+.gaurav h1{
+	    margin-left: 25%;
+	margin-top: -22%;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: verdana;
+	cursor: pointer;
+	font-size: 40px;
+}
+.gaurav p{
+	margin-top: 4%;
+	margin-left: 25%;
+	margin-right: 50px;
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: verdana;
+}
+footer{
+	margin-top: 8%;
+	width: 100%;
+	position: absolute;
+	background: #000;
+	color: #fff;
+	padding: 100px 0 30px;
+	border-top-left-radius: 100px;
+	font-size: 13px;
+	line-height: 20px;
+}
+.row{
+	width: 85%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.col{
+	flex-basis: 25%;
+	padding: 10px;
+}
+.log{
+
+	margin-top: -25%;
+	margin-left: -10px;
+	height: 200px;
+	width: 200px;
+}
+.col p{
+	cursor: pointer;
+
+	margin-left: -2%;
+	font-size: 15px;
+	color: grey;
+}
+.col p:hover{
+	color: red;
+}
+
+
+.col h3{
+	color: #00FFFF;
+	margin-left: -29%;
+	margin-top: -5%;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.col ul li{
+	margin-left: -45%;
+	list-style: none;
+	margin-bottom: 12px;
+}
+.col ul li a{
+
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	transition: 0.2s ease;
+
+}
+.col ul li a:hover{
+	color:#00FFFF ;
+}
+
+.coll{
+	flex-basis: 25%;
+	padding: 10px;
+}
+.coll h3{
+	color: #00FFFF;
+	margin-left: -175px;
+	margin-top: -5%;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.coll ul li{
+	margin-left: -75%;
+	list-style: none;
+	margin-bottom: 12px;
+}
+.coll ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	transition: 0.2s ease;
+}
+.coll ul li a:hover{
+	color:#00FFFF ;
+}
+
+.social-icons h2{
+	color: #00FFFF;
+	margin-left: -90%;
+	margin-top: 5%;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.social-icons ul li{
+	margin-left: -75%;
+	margin-bottom: 12px;
+	display: inline-block;
+}
+.social-icons .fa{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	color: #fff;
+	background: transparent;
+	margin-right: 15px;
+	cursor: pointer;
+	transition: 0.6s ease;
+}
+.social-icons .fa:hover{
+    background:#00FFFF;
+    color: #fff;
+    font-size: 22px;
+}
+	

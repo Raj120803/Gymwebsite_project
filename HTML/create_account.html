@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM</title>
+	<link rel="stylesheet" type="text/css" href="/CSS/create.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/login.css">
+	
+</head>	
+<body> 
+    <header>
+		<div class="main">
+			<div class="logo">
+				<img src="/img/gymflex-removebg-preview.png">
+			</div>
+			<ul>
+				<li><a href="/HTML/login.html">BACK</a></li>
+			</ul>
+		</div>
+		<div class="signup">
+			<img src="/img/login_icon.png"class="icon">
+			<h1>Sign Up</h1>
+			
+			<form>
+                <label>First Name</label>
+                <input type="text" placeholder="Enter your first name" />
+                <label>Last Name</label>
+                <input type="text" placeholder="enter your last name" />
+                <label>Email</label>
+                <input type="email" placeholder="Enter your Email" />
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password" />
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm your password" />
+               
+                <div class="package-selection">
+                    <label for="package-duration">Select Package Duration:</label>
+                    <select id="package-duration" onchange="updatePackagePrice()">
+                      <option value="1" data-price="1200">1 Month</option>
+                      <option value="3" data-price="3200">3 Months</option>
+                      <option value="6" data-price="6000">6 Months</option>
+                      <option value="12" data-price="10000">1 Year</option>
+                    </select>
+                
+                    <p id="package-price">Price: ₹1200</p>
+                  </div>
+                
+                  <script>
+                    function updatePackagePrice() {
+                      var select = document.getElementById("package-duration");
+                      var price = select.options[select.selectedIndex].getAttribute("data-price");
+                      document.getElementById("package-price").textContent = "Price: ₹" + price;
+                    }
+                  </script>
+                 
+        <!-- Payment Options Container -->
+        <div class="payment-container">
+            <h2>Select Payment Method</h2>
+
+            <div class="payment-option">
+                <input type="radio" name="payment" id="netbanking" value="netbanking">
+                <label for="netbanking">Netbanking</label>
+            </div>
+
+            <div class="payment-option">
+                <input type="radio" name="payment" id="upi" value="upi">
+                <label for="upi">UPI</label>
+            </div>
+
+            <div class="payment-option">
+                <input type="radio" name="payment" id="cash" value="cash">
+                <label for="cash">Cash</label>
+            </div>
+        </div>
+                <input style="margin-top: 20px;" type="submit" value="Signup" />
+				
+				
+			</form>
+		
+		</div>
+		
+
+	</header>
+</body>
+</html>
